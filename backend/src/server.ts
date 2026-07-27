@@ -1,0 +1,13 @@
+import 'dotenv/config';
+import express from 'express';
+import cors from 'cors';
+import path from 'path';
+import router from './routes';
+const app = express();
+app.use(cors());
+app.use(express.json());
+app.use('/api', router);
+app.use(express.static(path.join(__dirname, '../public')));
+app.get('*', (_req, res) => res.sendFile(path.join(__dirname, '../public/index.html')));
+const port = Number(process.env.PORT || 3000);
+app.listen(port, () => console.log(`OdontoNorte: http://localhost:${port}`));

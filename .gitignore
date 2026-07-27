@@ -1,0 +1,30 @@
+# Credenciais e configurações locais
+.env
+.env.local
+backend/.env
+backend/python/.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env_py/
+
+# Node.js
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# Sistema operacional
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+
+# Artefatos
+documentos

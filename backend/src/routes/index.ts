@@ -1,0 +1,11 @@
+import { Router } from 'express';
+import { PacienteController } from '../controllers/PacienteController';
+import { DentistaController } from '../controllers/DentistaController';
+import { ConsultaController } from '../controllers/ConsultaController';
+const router = Router();
+router.get('/pacientes', PacienteController.listar);
+router.post('/pacientes', PacienteController.criar);
+router.get('/dentistas', DentistaController.listar);
+router.get('/consultas', ConsultaController.listar);
+router.post('/consultas', ConsultaController.criar);
+export default router;
