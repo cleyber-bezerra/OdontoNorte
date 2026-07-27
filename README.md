@@ -96,7 +96,7 @@ Antes do commit, confirme:
 git status
 ```
 
-### TAREFA (DESAFIO)
+## 7. TAREFA (DESAFIO)
 -
 -criar tela de cadastro de dentista
   1. inclusão/exclusão/consulta/alteração
